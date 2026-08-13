@@ -4,18 +4,19 @@
 
 - [x] Install and lock dependencies.
 - [x] Verify lint, formatting, and production build.
-- [ ] Add `src/lib/gsap.ts` with one-time plugin registration.
-- [ ] Add Lenis and ScrollTrigger synchronization.
-- [ ] Add the theme-to-WebGL bridge.
+- [x] Add `src/lib/gsap.ts` with one-time plugin registration.
+- [x] Add Lenis and ScrollTrigger synchronization.
+- [x] Add the theme-to-WebGL bridge.
 
 ## Hero
 
-- [ ] Create the static Hero layout in strict black and white.
-- [ ] Add the GSAP load-in timeline.
-- [ ] Mount the single root canvas and Hero scene.
-- [ ] Load the Blender-authored astronaut `.glb`.
-- [ ] Connect Hero scroll progress to the WebGL scene.
-- [ ] Implement reduced-motion and mobile fallbacks.
+- [x] Create the static Hero layout in strict black and white.
+- [x] Add the GSAP load-in timeline.
+- [x] Mount the single root canvas and Hero scene.
+- [x] Load the Blender-authored astronaut `.glb`.
+- [x] Connect Hero scroll progress to the WebGL scene.
+- [x] Implement reduced-motion and mobile fallbacks.
+- [x] Correct the canvas stacking order so the astronaut is not hidden by Hero's background.
 
 ## Later Sections
 

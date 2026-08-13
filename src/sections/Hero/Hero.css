@@ -1,0 +1,134 @@
+.hero {
+  color: var(--fg);
+  min-height: 100dvh;
+  overflow: clip;
+  position: relative;
+}
+
+.hero__content {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+  padding: clamp(1.25rem, 2.5vw, 2.5rem);
+  pointer-events: none;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__meta,
+.hero__footer {
+  align-items: flex-start;
+  display: flex;
+  font-family: var(--accent-mono);
+  font-size: 0.7rem;
+  justify-content: space-between;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero__theme-toggle,
+.hero__footer a {
+  color: inherit;
+  pointer-events: auto;
+}
+
+.hero__theme-toggle {
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+  letter-spacing: inherit;
+  padding: 0.5rem 0.75rem;
+  text-transform: inherit;
+}
+
+.hero__headline {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-display);
+  font-size: clamp(3.25rem, 8.7vw, 10.5rem);
+  font-weight: 600;
+  letter-spacing: -0.075em;
+  line-height: 0.84;
+  max-width: min(82vw, 80rem);
+  text-wrap: balance;
+}
+
+.hero__headline span {
+  display: block;
+  overflow: hidden;
+}
+
+.hero__headline span:nth-child(2) {
+  margin-left: clamp(1.5rem, 11vw, 12rem);
+}
+
+.hero__headline span:nth-child(3) {
+  margin-left: clamp(0.75rem, 4vw, 4.5rem);
+}
+
+.hero__footer {
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.hero__footer p {
+  font-family: var(--font-body);
+  font-size: clamp(0.88rem, 1.1vw, 1.05rem);
+  letter-spacing: 0;
+  line-height: 1.4;
+  margin: 0;
+  max-width: 19rem;
+  text-transform: none;
+}
+
+.hero__footer a {
+  border-bottom: 1px solid currentColor;
+  margin-left: auto;
+  padding-bottom: 0.25rem;
+  text-decoration: none;
+}
+
+.hero__scroll {
+  min-width: 11rem;
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  .hero__content {
+    padding: 1rem;
+  }
+
+  .hero__headline {
+    font-size: clamp(3.2rem, 16vw, 5.4rem);
+    line-height: 0.88;
+    max-width: 100%;
+  }
+
+  .hero__headline span:nth-child(2),
+  .hero__headline span:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .hero__footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero__footer a {
+    margin-left: 0;
+  }
+
+  .hero__scroll {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__headline span,
+  .hero__content {
+    transform: none !important;
+  }
+}
