@@ -30,10 +30,10 @@ export function HeroScene() {
 
   return (
     <>
-      <group position={[-5.95, -3.82, -0.5]} rotation={[0, 0.48, 0]} scale={5.9}>
+      <group position={[-5.95, -3.88, -0.5]} rotation={[0, 1.3, 0]} scale={5.3}>
         <primitive object={billboard} />
       </group>
-      <group position={[2.3, -2, 0]} rotation={[2.3, 3, -2.1]} scale={2.2}>
+      <group position={[2.3, -2, 2]} rotation={[0, 0, 0]} scale={1.3}>
         <primitive object={astronaut} />
       </group>
       <Preload all />
